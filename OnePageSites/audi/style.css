@@ -1,0 +1,472 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    color: #fff; 
+    background-color: #000;
+    justify-content: space-between;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+ul li{
+    padding: 25px 50px 20px 20px;
+    font-size: 24px;
+}
+ul li a{
+    color: #fff;
+    transition: 0.7s;
+}
+ul li a:hover{
+    color: #ccc;
+    transition: 0.7s;
+}
+.logo{
+    padding: 10px 50px 10px 20px;
+}
+.search-container{
+   padding: 20px 10px 10px 10px;
+}
+
+.search-container button{
+    border: 2px solid #fff;
+    background: none;
+    outline: none;
+}
+
+.search-container input{
+    width: 200px;
+    height: 30px;
+    font-size: 14px;
+    outline: none;
+    border: none;
+}
+.fa-search{
+    color: #fff;
+    padding: 7.5px
+}
+.fa-search:active{
+    color: #ddd;
+}
+.search-container button:active{
+    border: 2px solid #ddd; 
+   
+}
+
+
+.a8{
+    background-position: center;
+    height: 600px;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.a8 div{
+    color: #fff;
+    font-family: Exo, sans-serif;
+    font-weight: bold;
+}
+.a8 div{
+    position: relative;
+    top: 10%;
+    left: 20%;
+}
+.title1{
+    font-size: 74px;
+}
+.title2{
+    font-size: 64px;
+}
+.a8 a{
+    color: #fff;
+    transition: 0.7s; 
+}
+.a8 a:hover{
+    color: #ddd;
+    transition: 0.7s;
+}
+.a8 button{
+    background: none;
+    border: 2px solid #fff;
+    transition: 0.7s;
+    outline: none;
+    margin-top: 10px;
+    cursor:pointer;
+}
+.a8 button p{
+    font-size: 24px;
+    font-family: Exo, sans-serif;
+    font-weight: bold;
+    padding: 5px 10px 5px 10px;
+    color: #fff;
+    transition: 0.7s;
+}
+.a8 button:hover{
+    background: #fff;
+    transition: 0.7s;
+}
+.a8 button:hover p{
+    color: #000;
+    transition: 0.7s;
+}
+
+.worldwide p{
+    text-align: center;
+    font-size: 64px;
+    font-family: Exo;
+    font-weight: bold;
+    padding: 20px;
+}
+.worldwide h1{
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    font-family: Exo;
+    font-weight: lighter;
+}
+.select{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.select select{
+    width: 800px;
+    border: 1px solid #ddd;
+    color: #000;
+    font-size: 18px;
+    height: 40px;
+    font-family: exo;
+    font-weight: bolder;
+}
+.select button{
+    height: 40px;
+    width: 200px;
+    color: #fff;
+    border: none;
+    background: red;
+    font-weight: bolder;
+    font-size: 18px;
+    font-family: exo;
+}
+.select button:hover{
+    background: #000;
+}
+
+.cards1{
+    display: flex;
+    justify-content: center;
+}
+.row{
+    background-size: cover;
+}
+.row-1{
+    background-image: url(card1.jpg);
+    height: 800px;
+    width: 500px;
+    background-position: center;
+}
+.row-content p{
+    color: #fff;
+    text-align: center;
+    display: none;
+    font-family: Exo
+}
+
+.row-content{
+    font-size: 44px;
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    height: inherit;
+    width: inherit;
+    transition: 1s;
+    display: none;
+}
+.row:hover .row-content{
+    display: block;
+    transition: 1s;
+}
+.row:hover .row-content p{
+    display: block;
+    position: relative;
+    top: 20%;
+}
+.row-2{
+    height: 50px;
+    background-image: url(card2.jpg);
+    height: 400px;
+    width: 800px;
+    background-position: center;
+}
+.row-3{
+    height: 50px;
+    background-image: url(card3.jpg); 
+    height: 400px;
+    width: 800px;
+    background-position: 0 92%;
+}
+.ps{
+    font-size: 24px;
+}
+
+.bottom-card{
+    height: 500px;
+    width: 1300px;
+    background-image: url(card4.jpg);
+    background-size: cover;
+    background-position: 10%;
+}
+.cards2{
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-card p{
+    color: #fff;
+    font-family: Exo;
+    font-weight: bolder;
+    font-size: 44px;
+    position: relative;
+    display: none;
+    text-align: center;
+}
+.bottom-card:hover p{
+    display: block;
+    top: 60%;
+    right: 30%;
+}
+
+.bottom-card:hover{
+    display: block;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(card4.jpg);
+}
+.card-btn-container{
+    text-align: center;
+}
+.card-btn{
+    padding: 20px 30px 20px 30px;
+    margin: 25px;
+    font-size: 18px;
+    font-family: Exo;
+    font-weight: bolder;
+    background: none;
+    border: 1px solid #000;
+}
+
+.card-btn:hover{
+    color: #fff;
+    background: #000;
+}
+.page-img{
+    background-image: url(page-img.jpg);
+    background-size: cover;
+    height: 800px;
+}
+.page{
+    padding: 20px 0;
+}
+.page-img p{
+    color: #fff;
+    font-family: exo;
+    font-weight: bolder;
+    font-size: 64px;
+    position: relative;
+    top: 30%;
+    left: 10%;
+}
+
+.page-img:hover span{
+    animation-name: example;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+.page span{
+    position: relative;
+    color: #8B0000;    
+}
+
+@keyframes example{
+    0%{left: 0px;top:0px;}
+    50%{left: 20px;top:0px;}
+    100%{left: 0px;top:0px;}
+}
+
+
+.page-img-2{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(page-img2.jpg);
+    background-size: cover;
+    height: 800px;
+    text-align: center;
+}
+.page-img-2 p{
+    color: #fff;
+    font-family: exo;
+    font-weight: bolder;
+    position: relative;
+    top: 40%;
+}
+
+.page-img-2:hover span{
+    animation-name: example2;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+}
+
+.page-img-2 span{
+    position: relative;
+    color: #8B0000;    
+}
+
+@keyframes example2{
+    0%{left: 0px;top:0px;}
+    50%{left: 20px;top:0px;}
+    100%{left: 0px;top:0px;}
+}
+.p2-1{
+    font-size: 44px;
+}
+.p2-2{
+    font-size: 64px;   
+}
+.p2-3{
+    font-size: 34px;
+}
+
+.cards3 p{
+    font-size: 44px;
+    font-family: Exo;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+}
+ 
+.cards3-row-1{
+    font-family: exo;
+    font-size: 24px;
+    font-weight: bolder;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.cards3-1, .cards3-2,.cards3-3{
+    width: 450px;
+    height: 300px;
+    margin: 1px;
+}
+.cards3-1{
+    background-image: url(card11.jpg);
+    background-size: cover;
+}
+.cards3-2{
+    background-image: url(card12.jpg);
+    background-size: cover;
+}
+
+.cards3-3{
+    background-image: url(card13.jpg);
+    background-size: cover;
+}
+
+.cards3-4{
+    background-image: url(card14.jpeg);
+    background-size: cover;
+}
+
+.cards3-5{
+    background-image: url(card15.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+
+.cards3-row-2{
+    font-family: exo;
+    font-size: 24px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+    text-align: center; 
+}
+.cards3-4, .cards3-5,.cards3-6{
+    width: 450px;
+    height: 300px;
+    margin: 1px;
+    display: inline-block;
+}
+.cards3-6{
+    background: none;
+}
+.cards3 h1{
+    height: inherit;
+    vertical-align: middle;
+    line-height: 300px;
+    position: relative;
+    color: #fff;
+}
+.cards3 span{
+    color: #8B0000;
+}
+
+.cards3 a:hover h1{
+    background-image: linear-gradient(rgba(128,0,0,0.5),rgba(128,0,0,0.5));
+}
+.cards3 a:hover span{
+    animation-name: example3;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes example3{
+    0%{left: 0px;top:0px;}
+    50%{left: 20px;top:0px;}
+    100%{left: 0px;top:0px;}
+}
+
+.col{
+    display: flex;
+    justify-content: space-around;
+}
+footer{
+    margin-top: 50px;
+    background-color: #f2f2f2;
+    
+    color: #000;
+    text-decoration: none;
+}
+
+footer p{
+    font-family: exo;
+    font-weight: bolder;
+}
+footer a{
+    color: #000;
+    font-weight: lighter;
+    font-size: 22px
+}
+footer p:first-child{
+    padding: 15px 0;
+    font-size: 24px;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+footer .hr{
+    width: 90%;
+    margin: 40px auto;
+    height: 0.7px;
+    background-color: #000;
+}
+footer .soc{
+    text-align: center;
+}
+footer .end{
+    font-weight: lighter;
+    font-size: 12px;
+    margin: 40px 60px 0 60px;
+}

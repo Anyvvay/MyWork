@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Microsoft</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Mono" rel="stylesheet">
+</head>
+<body>
+        <div class="sidenav">
+            <div><a href="#"><img src="img/logo.png" alt="logo" class="logo"></a></div>
+            <div><a href="#"><i class="fas fa-car"></i><br>Models <span>sdannd</span></a></div>
+            <div><a href="#"><i class="fas fa-search"></i><br>Inventory <span>afar</span></a></div>
+            <div><a href="#"><i class="fas fa-screwdriver"></i><br>Build your own</a></div>
+            <div><a href="#"><i class="fas fa-map-marker-alt"></i><br>Find a dealer</a></div>
+            <div><a href="#"><i class="fas fa-key"></i><br>Owners <span>fquuuf</span></a></div>
+            <div><a href="#"><i class="fas fa-ellipsis-h"></i><br>More <span>rrfdfdfr</span></a></div>
+        </div>
+        <div class="main">
+            <header>
+                <nav>
+                        <div>
+                            <a href="#">Warranty</a>
+                        </div>
+                        <div>|</div>
+                        <div>
+                            <a href="#">Offers</a>
+                        </div>
+                        <div>|</div>
+                        <div>
+                            <a href="#">Tdi settlement</a>
+                        </div>
+                        <div>|</div>
+                        <div>
+                            <a href="#">Recalls</a>
+                        </div>
+                        <div>|</div>
+                        <div>
+                            <a href="#">Espanol</a>
+                        </div>
+                </nav>
+            </header>
+            <div class="slideshow">
+               <div class="slideshow-container">
+                    <div class="mySlides fade">
+                      <div class="slide-content slide-1">
+                            
+                      </div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="slide-content slide-2">
+                          
+                      </div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="slide-content slide-3">
+                          
+                      </div>
+                    </div>
+                    <div class="mySlides fade">
+                      <div class="slide-content slide-4">
+                          
+                      </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div class="dots">
+                  <hr>
+                  <span class="dot" onclick="currentSlide(1)">The all-new Jetta</span>
+                  <span>|</span> 
+                  <span class="dot" onclick="currentSlide(2)">Pikes peak record</span> 
+                  <span>|</span> 
+                  <span class="dot" onclick="currentSlide(3)">Arteon</span> 
+                  <span>|</span> 
+                  <span class="dot" onclick="currentSlide(4)">Warranty</span>
+                </div>
+                </div>
+                
+            </div>
+            <div class="level-2">
+                <div class="cards">
+                    <div class="card-1 card">
+                        <div class="card-content">
+                            <h2>College grad bonus</h2>
+                            <h1>Have diploma, will travel.</h1>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                    <div class="card-2 card">
+                        <div class="card-content">
+                            <h2>Military &amp; first responders bonus</h2>
+                            <h1>For those who serve...</h1>
+                            <h1>And love to drive.</h1>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="level-3">
+                <div class="cards">
+                    <div class="card-3 card">
+                        <div class="card-content">
+                            <h2>Warranty</h2>
+                            <h1>America's Best Bumper-to-Bumper</h1>
+                            <h1>Limited Warranty.**Period.</h1>
+                            <button>Learn more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="level-4">
+                <div class="cards">
+                    <div class="card-4 card">
+                        <div class="card-content">
+                            <h2>Parts &amp; accessories</h2>
+                            <h1>Fir more on your VW.</h1>
+                            <button>Shop now</button>
+                        </div>
+                    </div>
+                    <div class="card-5 card">
+                        <div class="card-content">
+                            <h2>Drivergear</h2>
+                            <h1>Then try something</h1>
+                            <h1>on for yourself</h1>
+                            <button>Shop now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+          }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+          }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+        </script>
+</body>
+</html>
